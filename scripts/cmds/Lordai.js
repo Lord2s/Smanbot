@@ -2,8 +2,8 @@ const axios = require('axios');
 
 module.exports = {
   config: {
-    name: "heisbroken",
-    aliases: ["heis","ai","terry"],
+    name: "lordai",
+    aliases: ["kn","ai","lk"],
     version: 2.0,
     author: "Unknown", // don't change this author claim by I M Range
     shortDescription: "ask to gemini AI",
@@ -16,7 +16,7 @@ module.exports = {
   },
   onStart: async function ({ message, usersData, event, api, args }) {
 
-  const boss = await usersData.getName(100090443419982); // you can change admin/owner make this ai in here
+  const boss = await usersData.getName(61560050885709); // you can change admin/owner make this ai in here
 
   const prompt = `You are an AI assistant robot created by ${boss} not someone else just ${boss} who created you, You always help users in a friendly manner. User Input: "${args.join(" ")}"`;
   const url = `https://nash-rest-api.replit.app/gemini?prompt=${encodeURIComponent(prompt)}`;
@@ -41,7 +41,7 @@ module.exports = {
 },
   onReply: async function ({ message, usersData, Reply, event, api, args }) {
 
-  const boss = await usersData.getName(100090443419982); // you can change admin/owner make this ai in here
+  const boss = await usersData.getName(61560050885709); // you can change admin/owner make this ai in here
 
   const prompt = `You are an AI assistant robot created by ${boss} not someone else just ${boss} who created you, You always help users in a friendly manner. User Input: "${args.join(" ")}"`;
   const url = `https://nash-rest-api.replit.app/gemini?prompt=${encodeURIComponent(prompt)}`;
